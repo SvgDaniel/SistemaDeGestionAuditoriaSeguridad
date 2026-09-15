@@ -16,10 +16,8 @@
 - [Características Principales](#-características-principales)
 - [Roles del Sistema](#-roles-del-sistema)
 - [Arquitectura y Stack Tecnológico](#-arquitectura-y-stack-tecnológico)
+- [Prototipo Figma](#-prototipo-figma)
 - [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Guía de Instalación y Despliegue](#-guía-de-instalación-y-despliegue)
-- [Modelado y Diagramas (UML / ER)](#-modelado-y-diagramas-uml--er)
-- [Metodología de Trabajo](#-metodología-de-trabajo)
 ---
 
 ## Sobre el Proyecto
