@@ -75,7 +75,7 @@ El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para
 
 ---
 ## Prototipo Figma
-https://www.figma.com/make/aMGNC0BL2BExfs5NJlWxFF/Cybersecurity-Audit-Dashboard-Design?t=yvLAggxF7cF9FkQw-1
+https://www.figma.com/make/aMGNC0BL2BExfs5NJlWxFF/Gestion-de-auditorias?t=yvLAggxF7cF9FkQw-1
 
 ## Estructura del Repositorio
 
