@@ -26,29 +26,29 @@
 
 ## Sobre el Proyecto
 
-El **Sistema de Gestión de Auditorías de Pentesting** es una solución web desarrollada en **Python** diseñada para empresas de consultoría de ciberseguridad[cite: 4, 10]. Permite controlar el ciclo de vida completo de las auditorías de seguridad[cite: 3, 4]: desde la creación y asignación de equipos, pasando por el registro normalizado de vulnerabilidades y la validación de evidencias, hasta la emisión automatizada de informes de cara al cliente[cite: 3, 4].
+El **Sistema de Gestión de Auditorías de Pentesting** es una solución web desarrollada en **Python** diseñada para empresas de consultoría de ciberseguridad. Permite controlar el ciclo de vida completo de las auditorías de seguridad: desde la creación y asignación de equipos, pasando por el registro normalizado de vulnerabilidades y la validación de evidencias, hasta la emisión automatizada de informes de cara al cliente.
 
-Este proyecto se desarrolla en el marco académico de la asignatura **Fundamentos de Ingeniería de Software**[cite: 11, 12].
+Este proyecto se desarrolla en el marco académico de la asignatura **Fundamentos de Ingeniería de Software**.
 
 ---
 
 ## Problema que Resuelve
 
-En las operaciones tradicionales de ciberseguridad, la falta de una herramienta unificada genera ineficiencias críticas[cite: 11, 12]:
-- **Información Desorganizada y Dispersa:** Uso heterogéneo de herramientas (Word, Markdown, hojas de cálculo) por parte de cada Pentester[cite: 2, 11, 12].
-- **Construcción Manual de Reportes:** Proceso propenso a errores al copiar, pegar y consolidar hallazgos manualmente[cite: 2, 11, 12].
-- **Falta de Trazabilidad y Control:** Imposibilidad de consultar en tiempo real el estado global de auditorías activas o disponer de métricas históricas[cite: 2, 11, 12].
+En las operaciones tradicionales de ciberseguridad, la falta de una herramienta unificada genera ineficiencias críticas:
+- **Información Desorganizada y Dispersa:** Uso heterogéneo de herramientas (Word, Markdown, hojas de cálculo) por parte de cada Pentester.
+- **Construcción Manual de Reportes:** Proceso propenso a errores al copiar, pegar y consolidar hallazgos manualmente.
+- **Falta de Trazabilidad y Control:** Imposibilidad de consultar en tiempo real el estado global de auditorías activas o disponer de métricas históricas.
 
 ---
 
 ## Características Principales
 
-- **Gestión Centralizada de Auditorías:** Creación, asignación de equipos y seguimiento por estados (`Sin asignar`, `Asignada`, `En curso`, `En revisión`, `Reporte Disponible`)[cite: 3, 4].
-- **Taxonomía Estándar OWASP Top 10:2025:** Clasificación obligatoria de hallazgos mediante el catálogo oficial vigente[cite: 3, 4, 6].
-- **Gestión Segura de Evidencias:** Carga de imágenes, logs, capturas de tráfico (PCAP) y pruebas de concepto (PoC) de hasta **10 MB**, almacenadas como **archivos de solo lectura** sin permisos de ejecución por seguridad[cite: 4].
-- **Control de Calidad (QA) por el Líder:** Módulo para validar hallazgos, devolverlos con observaciones al Pentester o marcarlos como duplicados[cite: 3, 4].
-- **Generación Automática de Reportes:** Compilación inmediata en PDF de auditorías cerradas con hallazgos validados[cite: 3, 4].
-- **Historial e Inalterabilidad:** Bitácora inalterable de auditoría (quién hizo qué y cuándo)[cite: 4].
+- **Gestión Centralizada de Auditorías:** Creación, asignación de equipos y seguimiento por estados (`Sin asignar`, `Asignada`, `En curso`, `En revisión`, `Reporte Disponible`).
+- **Taxonomía Estándar OWASP Top 10:2025:** Clasificación obligatoria de hallazgos mediante el catálogo oficial vigente.
+- **Gestión Segura de Evidencias:** Carga de imágenes, logs, capturas de tráfico (PCAP) y pruebas de concepto (PoC) de hasta **10 MB**, almacenadas como **archivos de solo lectura** sin permisos de ejecución por seguridad.
+- **Control de Calidad (QA) por el Líder:** Módulo para validar hallazgos, devolverlos con observaciones al Pentester o marcarlos como duplicados.
+- **Generación Automática de Reportes:** Compilación inmediata en PDF de auditorías cerradas con hallazgos validados.
+- **Historial e Inalterabilidad:** Bitácora inalterable de auditoría (quién hizo qué y cuándo).
 
 ---
 
@@ -56,24 +56,24 @@ En las operaciones tradicionales de ciberseguridad, la falta de una herramienta 
 
 | Rol | Permisos y Responsabilidades Clave |
 |---|---|
-| **Líder de Auditoría** | Crea auditorías, asigna Pentesters, valida/devuelve hallazgos, genera reportes y consulta métricas[cite: 2, 3, 4]. |
-| **Pentester** | Registra hallazgos en auditorías asignadas, adjunta evidencias y realiza correcciones[cite: 2, 3, 4]. |
-| **Administrador** | Gestiona usuarios (alta, cambio de rol, desactivación) y audita la trazabilidad del sistema[cite: 2, 3, 4]. |
-| **Cliente** | Consulta el estado de su auditoría en curso y descarga el reporte final publicado[cite: 2, 3, 4]. |
+| **Líder de Auditoría** | Crea auditorías, asigna Pentesters, valida/devuelve hallazgos, genera reportes y consulta métricas. |
+| **Pentester** | Registra hallazgos en auditorías asignadas, adjunta evidencias y realiza correcciones. |
+| **Administrador** | Gestiona usuarios (alta, cambio de rol, desactivación) y audita la trazabilidad del sistema. |
+| **Cliente** | Consulta el estado de su auditoría en curso y descarga el reporte final publicado. |
 
 ---
 
 ## Arquitectura y Stack Tecnológico
 
-El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para garantizar el desacoplamiento y la mantenibilidad[cite: 4, 12]:
+El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para garantizar el desacoplamiento y la mantenibilidad:
 
-- **Lenguaje:** Python 3.11+[cite: 4, 10]
-- **Backend / Framework Web:** FastAPI (o Flask)[cite: 4, 12]
-- **ORM / Persistencia:** SQLAlchemy 2.0+[cite: 4]
-- **Base de Datos:** PostgreSQL / SQLite[cite: 4]
-- **Seguridad & Auth:** Passlib (Hashing Bcrypt/Argon2 con *salt*), RBAC[cite: 4]
-- **Motor de Reportes:** WeasyPrint / ReportLab[cite: 4]
-- **Frontend / UI:** Jinja2 + HTML5 + TailwindCSS[cite: 4]
+- **Lenguaje:** Python 3.11+
+- **Backend / Framework Web:** FastAPI (o Flask)
+- **ORM / Persistencia:** SQLAlchemy 2.0+
+- **Base de Datos:** PostgreSQL / SQLite
+- **Seguridad & Auth:** Passlib (Hashing Bcrypt/Argon2 con *salt*), RBAC
+- **Motor de Reportes:** WeasyPrint / ReportLab
+- **Frontend / UI:** Jinja2 + HTML5 + TailwindCSS
 
 ---
 
