@@ -20,8 +20,6 @@
 - [Guía de Instalación y Despliegue](#-guía-de-instalación-y-despliegue)
 - [Modelado y Diagramas (UML / ER)](#-modelado-y-diagramas-uml--er)
 - [Metodología de Trabajo](#-metodología-de-trabajo)
-- [Licencia](#-licencia)
-
 ---
 
 ## Sobre el Proyecto
@@ -83,13 +81,10 @@ El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para
 gestion-auditorias-pentesting/
 ├── .github/                 # Workflows de integración continua (CI/CD)
 ├── docs/                    # Documentación de ingeniería de software
-│   ├── 00_PROMPT_MAESTRO.md
-│   ├── 01_ESTADO_PROYECTO.md
-│   ├── 02_DECISIONES.md
-│   ├── 03_CHECKPOINT.md
-│   ├── 04_INVESTIGACION_METODOLOGIAS.md
-│   ├── REFERENCIAS-FUENTES.md
-│   └── diagrams/            # Fuentes de diagramas (Mermaid / PlantUML)
+│   ├── 01_INVESTIGACION_METODOLOGIAS.pdf
+│   ├── 02_HISTORIAS_DE_USUARIO.pdf
+│   ├── 03_REQUERIMIENTOS_FUNCIONALES_Y_NO_FUNCIONALES.pdf
+│   └── diagrams/            
 ├── src/                     # Código fuente de la aplicación Python
 │   ├── app/
 │   │   ├── api/             # Controladores y rutas HTTP
