@@ -75,8 +75,7 @@ El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para
 
 ---
 ## Prototipo Figma
-https://www.figma.com/make/aMGNC0BL2BExfs5NJlWxFF/Gestion-de-auditorias?t=yvLAggxF7cF9FkQw-1
-
+<img width="1870" height="991" alt="Screenshot 2026-09-15 at 18-46-34 Gestion de auditorias – Figma Make" src="https://github.com/user-attachments/assets/568a0bc8-020a-4058-ac29-926046867a6a" />
 ## Estructura del Repositorio
 
 ```text
