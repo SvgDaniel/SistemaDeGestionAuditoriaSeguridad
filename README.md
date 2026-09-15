@@ -74,6 +74,8 @@ El sistema sigue una **Arquitectura en Capas (Layered Architecture / MVC)** para
 - **Frontend / UI:** Jinja2 + HTML5 + TailwindCSS
 
 ---
+## Prototipo Figma
+<img width="1870" height="991" alt="Screenshot 2026-09-15 at 18-46-34 Gestion de auditorias – Figma Make" src="https://github.com/user-attachments/assets/568a0bc8-020a-4058-ac29-926046867a6a" />
 
 ## Estructura del Repositorio
 
@@ -82,8 +84,9 @@ gestion-auditorias-pentesting/
 ├── .github/                 # Workflows de integración continua (CI/CD)
 ├── docs/                    # Documentación de ingeniería de software
 │   ├── 01_INVESTIGACION_METODOLOGIAS.pdf
-│   ├── 02_HISTORIAS_DE_USUARIO.pdf
-│   ├── 03_REQUERIMIENTOS_FUNCIONALES_Y_NO_FUNCIONALES.pdf
+│   ├── 02_QUESTIONARIO.pdf
+│   ├── 03_HISTORIAS_DE_USUARIO.pdf
+│   ├── 04_REQUERIMIENTOS_FUNCIONALES_Y_NO_FUNCIONALES.pdf
 │   └── diagrams/            
 ├── src/                     # Código fuente de la aplicación Python
 │   ├── app/
